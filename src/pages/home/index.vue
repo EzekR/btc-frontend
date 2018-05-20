@@ -2,7 +2,7 @@
   <div class="df-home">
     <div class="main">
       <div class="billboard">
-        <h3><i class="fa fa-fire"></i>HOT POEMS</h3>
+        <h3><i class="fa fa-fire"></i>热门新闻</h3>
       </div>
       <sub-poem
       :poem="poem"
@@ -13,7 +13,7 @@
     </div>
     <div class="side">
       <div class="billboard">
-        <h3><i class="fa fa-users"></i>RAN AUTHORS</h3>
+        <h3><i class="fa fa-users"></i>热门作者</h3>
       </div>
       <authorList :authors="localData.author"></authorList>
     </div>

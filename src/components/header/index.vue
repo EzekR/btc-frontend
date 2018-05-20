@@ -3,8 +3,8 @@
     <el-row justify="space-around" type="flex">
       <el-col class="nav" :span="8">
         <el-menu-item index="1" :route="{ name:'home' }">首页</el-menu-item>
-        <el-menu-item index="2" :route="{ name:'poem' }">诗库</el-menu-item>
-        <el-menu-item index="4" :route="{ name:'apprec' }">梦门</el-menu-item>
+        <el-menu-item index="2" :route="{ name:'poem' }">薅羊毛</el-menu-item>
+        <el-menu-item index="4" :route="{ name:'apprec' }">币圈新闻</el-menu-item>
         <el-menu-item index="5" :route="{ name:'feedback' }">反馈</el-menu-item>
       </el-col>
       <el-col class="searchbar-wrapper" :span="7">
@@ -12,13 +12,13 @@
           class="searchbar c-form"
           ref="searchbar"
           icon="search"
-          placeholder="搜索你感兴趣的诗文..."
+          placeholder="搜索你感兴趣的内容"
           :on-icon-click="scout"
           @keyup.enter.native="scout"
           @blur="blurSearchBar"
           @focus="focusSearchBar"
         ></el-input>
-        <el-button class="create" @click="toggleCreateDialog">创作</el-button>
+        <!--<el-button class="create" @click="toggleCreateDialog">创作</el-button>-->
       </el-col>
       <el-col class="actions" :span="3" >
         <template v-if="isLogined">
@@ -196,8 +196,6 @@ export default {
       bc(White !important,Green)
       transform translateY(-10px)
     &.is-active
-      border-bottom-left-radius 80%
-      border-bottom-right-radius 10%
       border-bottom 3px solid Green
       color Green
   .searchbar-wrapper
